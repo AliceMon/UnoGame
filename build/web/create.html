@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UNO GAME</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <script src="lib/jquery-2.2.0.js"></script>
+            <script src="create.js"></script>
+    </head>
+    <body>
+        <div id = "createDiv">
+            
+            <button id = "connectBtn" style="height: 30px; width: 300px;">Connect</button><br><br>
+
+                    <h3>Player Number: </h3>
+
+                    <input type="text" placeholder="Please input your player number limit!" 
+                           style="height: 50px; width: 300px;" id="name"><br><br>
+
+                    <h3>Game ID:</h3>
+
+                    <input type ="text" placeholder="Create/type your Game group" 
+                           style="height: 50px; width: 300px;" id="group">
+
+                    <button id="create">create</button><br><br>
+
+                    <button type="submit" id="getRoomBtn" style="height: 30px; width: 300px;">Go to List</button>
+
+
+                    <h2 id="connect"></h2><br>
+        </div>
+        
+        <div id = "createdGroupListDiv" align="center" hidden>
+            
+            Room Name : 
+            <label id = "lblRoomName"></label><br>
+            
+            (Limited)Max Player Number :
+            <label id = "lblPlayerNumber"></label><br>
+            
+            Current Player Number :
+            <label id = "lblCurrent"></label><br>
+            
+            <button type="submit" id="startBtn" style="height: 30px; width: 300px;">Start Game</button>
+
+        </div>
+        
+        <div id = "deskDiv" hidden>
+                <h1>Pile Cards</h1>
+                <img id ="abc" src="images/back.png"/>
+                <div id="bal">
+                    
+                </div>
+
+
+                <div id="card">  
+                     <h1>Discard cards</h1>
+                    <div id="discard">
+                       
+                    </div>
+                    <label id="count"></label>
+                </div>
+        </div>
+        
+<!--        <div id="loadingDiv" hidden>
+            
+            <h2 align = "center">LOADING.....</h2>
+            
+        </div>-->
+                
+<!--            <ul id="availGroup"></ul>   -->
+        
+    </body>
+</html>

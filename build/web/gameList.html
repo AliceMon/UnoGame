@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Game List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="lib/jquery-2.2.0.js"></script>
+        <script src="gameList.js"></script>
+    </head>
+    <body>
+        
+        <div id = "loadDiv">
+            <button type="submit" id="loadBtn" style="height: 30px; width: 300px;">
+                Load</button>
+
+            <h3>PLayer ID:</h3>
+
+            <input type="text" placeholder="Please input your player ID" 
+                style="height: 50px; width: 300px;" id="pid">
+            
+            <br><br>
+            <h3>Player Name:</h3>
+
+            <input type="text" placeholder="Please input your player name" 
+                style="height: 50px; width: 300px;" id="name">
+            
+            <button id="createBtn">create</button><br><br>
+            
+            <button type="submit" id="connectBtn" style="height: 30px; width: 300px;">
+                Connect</button>
+        </div>    
+        
+        <div id = "gameListDiv" hidden>
+            <h2 align = "center">List of Game Groups You can join!!</h2><br>
+            <ul id="availGroup"></ul>
+            <label id = "availGroup"></label>
+            <button id="joinBtn">Join</button><br><br>
+            <hr>
+        </div>
+                
+        <div id = "loadingPlayerDiv" hidden>
+            <h2>CONNECTING.......</h2>
+        </div>
+        
+        <div id = "image" hidden>
+             <h1>In hand cards</h1>  
+             <button id="drawBtn">Draw</button><br><br>
+             <button id="reverseBtn">Reverse</button><br><br>
+            <div id = "img" > 
+            </div>
+        </div>    
+        
+    </body>
+</html>
